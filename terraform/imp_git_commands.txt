@@ -14,3 +14,5 @@ git status - to see the current status
 
 To commit specific files
 git commit file1 file2 file5 -m "commit message"
+
+git push -u origin master
