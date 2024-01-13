@@ -1,0 +1,16 @@
+If you accidentally commit the wrong files
+
+$ git reset --soft HEAD~1
+If you want to unstage the files and start over
+
+$ git reset
+Unstaged changes after reset:
+M file1
+M file2
+M file3
+M file4
+
+git status - to see the current status
+
+To commit specific files
+git commit file1 file2 file5 -m "commit message"

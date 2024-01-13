@@ -1,0 +1,27 @@
+AWS account:
+gargashu0048@gmail.com
+Khiladi vala password
+
+
+Autentication is the process of verifying who a user is
+Authorization is the process of verifying what they have access to 
+Example: Alice is a user in AWS with no access to any service
+
+For AWS provider we have access keys and secret keys as part of credentials
+
+Before starting with AWS, we need to create a user, with adminaccess permission
+and create a access and secret key which will need later using terraform
+for the authentication and authorization.
+
+
+Terraform init - plugins required for the providers are automatically downloaded
+and saved localley to a .terrform directory
+
+resource "aws_instance" "firstec2"
+
+firstec2 - this is local name
+
+state file - contains all the data regarding your resource.
+hcl.lock file, have the provider version stored
+
+terraform refresh command is depricated in newer version of terraform
