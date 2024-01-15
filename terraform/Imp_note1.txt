@@ -21,7 +21,29 @@ resource "aws_instance" "firstec2"
 
 firstec2 - this is local name
 
-state file - contains all the data regarding your resource.
+state file - contains all the data regarding your resource (This has very imp usecase)
 hcl.lock file, have the provider version stored
 
 terraform refresh command is depricated in newer version of terraform
+
+-> If we want to have value dynamically with any resource you can use ${}
+and if you want to extend any thing in the value you got you can do "abc${}poi"
+
+-> Variables are very important, as they play a crucial role. They store the static data within
+themselves and can be shared among different places and can be reused everywhere, once you 
+set some value either hardcoded value or Dynamic value depending upon the use case.
+
+
+-> We can create a variable in different folder and is not necessary to provide any default value.
+It can be empty. Eg - variables "instancetype"{} and we can assign the instancetype value in a
+different file which is ending with terraform.tfvars, for example if we use a different file
+other than the name as terraform.tfvars, like custom.tfvars, so in CLI, we have run
+terraform plan -var-file="custom.tfvars"
+
+
+-> terraform has built in functions and it only uses those functions. 
+-> how to use in cinsole write terraform console -> enter and start using functions for learning.
+
+-> terraform validate checks whether a configuration is syntactically correct.
+
+->     Dynamic block

@@ -15,4 +15,9 @@ git status - to see the current status
 To commit specific files
 git commit file1 file2 file5 -m "commit message"
 
-git push -u origin master
+git push -u origin master -> -u will establish a connection btw local and remote branch for first time
+later we can use git push
+
+git add .
+git commit - m ""
+git push
